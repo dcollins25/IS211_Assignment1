@@ -1,3 +1,10 @@
+def listDivide(numbers, divide=2):
+    amt = 0
+    for num in numbers:
+        if(num % divide == 0):
+            amt += 1
+    return amt
+
 class ListDivideException(Exception):
     pass
 def testListDivide():
